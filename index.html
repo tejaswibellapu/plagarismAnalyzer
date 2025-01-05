@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+    h1{
+        font-weight: bold;
+    }
+    @keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: var(--clr-black);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.125rem;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(45deg, rgba(194, 233, 221, 0.5) 1%, rgba(104, 119, 132, 0.5) 100%), linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
+        }
+
+        .center-container {
+            text-align: center;  /* To center text if needed */
+        }
+
+        .center-button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .center-button:hover {
+            background-color: #218838;
+        }
+</style>
+<body>
+    <center>
+    <div class="container">
+        <div class="row">
+            <h1 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Files Plagiarism Analyser</h1>
+            <br><br><br>
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="float-left"> <strong> Upload Files </strong> </div>
+                    </div>
+                    <div class="card-body card-block">
+                        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                            <div class="row form-group">
+                                <div class="col-12 col-md-12">
+                                    <div class="control-group" id="fields">
+                            
+                                        <div class="controls">
+                                            <div class="entry input-group upload-input-group">
+                                                <input class="form-control" name="fields[]" id="fileInput1" type="file">
+                                            </div>
+                                            <div class="entry input-group upload-input-group">
+                                                <input class="form-control" name="fields[]" id="fileInput2" type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="center-container">
+            <!-- Your existing content goes here -->
+            <center>
+            <button class="center-button" onclick="checkSimilarity()">Check Similarity</button>
+            </center>
+            <!-- Add the result div below the button -->
+            <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+    </center>
+</body>
+</html>

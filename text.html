@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Plagiarism Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    h1{
+        font-weight: bold;
+    }
+    @keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: var(--clr-black);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.125rem;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(45deg, rgba(194, 233, 221, 0.5) 1%, rgba(104, 119, 132, 0.5) 100%), linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
+        }
+
+        .center-container {
+            text-align: center;  /* To center text if needed */
+        }
+
+        .center-button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .center-button:hover {
+            background-color: #218838;
+        }
+</style>
+<body>
+  <div class="parent-container">
+    <div class="container">
+      <h1 style="text-align: center; font-family: 'Roboto', sans-serif; text-emphasis-color: blue; color: green;">Text Plagiarism Analyzer</h1>
+      <form id="plagiarismForm">
+        <fieldset>
+          <legend>Text Inputs</legend>
+          <div>
+            <label for="text1">Text 1:</label>
+            <textarea id="text1" rows="6" cols="50" aria-label="Text 1 input"></textarea>
+
+          </div>
+          <div>
+            <label for="text2">Text 2:</label>
+            <textarea id="text2" rows="6" cols="50" aria-label="Text 2 input"></textarea>
+            
+          </div>
+        </fieldset>
+        <br><br>
+        <center><button type="button" onclick="analyze()">Analyze</button></center>
+      </form>
+      <div id="result">
+        <!-- Placeholder for results -->
+      </div>
+      <div id="history">
+        <!-- Placeholder for history of analyses -->
+      </div>
+    </div>
+  </div>
+  <script src="text.js"></script>
+</body>
+</html>
