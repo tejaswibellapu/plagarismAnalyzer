@@ -20,3 +20,19 @@ Technologies USED::
 
      Frontend: HTML, CSS, JavaScript
 
+FILES::
+
+index.html: The main HTML file that has the structure of the web page.
+
+i2.html: HTML file used for handling or displaying file-based content.
+
+script.js: JavaScript file for handling file-based input,for file plagiarism analysis.
+
+style.css: CSS file for styling the web pages.
+
+plagiarism.jpg: Image file (possibly used for displaying on the website or project description).
+
+text.html: HTML file used for handling or displaying text-based content.
+
+text.js: JavaScript file for handling text-based input,for text plagiarism analysis.
+
